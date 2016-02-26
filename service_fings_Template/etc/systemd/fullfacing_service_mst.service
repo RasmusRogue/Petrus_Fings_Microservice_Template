@@ -1,0 +1,11 @@
+[Unit]
+Description=Fullfacing Audit Service
+
+[Service]
+Type=simple
+#User=fullfacing
+ExecStart=/opt/fullfacing/mst/start_service.sh audit
+#PidFile=/var/run/fullfacing/mst.pid
+
+[Install]
+WantedBy=multi-user.target
